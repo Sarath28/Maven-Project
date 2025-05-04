@@ -25,8 +25,8 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build and push
         run: |
-          docker build -t gagandeepthinknyx/intelus:latest .
-          docker push gagandeepthinknyx/intelus:latest
+          docker build -t sarathapp/test2:latest .
+          docker push sarathapp/test2:latest
       - name: Publish Success messages to Slack
         uses: rtCamp/action-slack-notify@v2
         env:
